@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="navbar">
+        <div id="nav-up">
+          <div id="logo">
+            <img src="https://www.jawahareducation.com/images/logo.png" alt="">
+        </div>
+            <!-- <div id="email">
+                <h3>Email</h3>
+                <p>admission@jawahareducation.com</p>
+            </div> -->
+            <div id="contact">
+                <h3>Contact</h3>
+                <p>+91-9354364939</p>
+            </div>
+        </div>
+        <!-- <div id="nav-down">
+            <div id="logo">
+                <img src="https://www.jawahareducation.com/images/logo.png" alt="">
+            </div>
+            <div id="nav-title">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Study Abroad</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
+        </div> -->
+    </div>
+
+    <div id="home">
+        <div class="slider-container">
+            <div class="slide fade">
+              <img class="slide-image" src="cityscape-singapore-city-skyline.jpg">
+              <div class="slide-content">
+                <h1 class="slide-title">Study in Singapore</h1>
+                <p class="slide-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+                </p>
+                <a href="" class="slide-btn">
+                  Apply Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                </a>
+              </div>
+              <div class="slide-number-container">
+                <p class="slider-number"></p>
+                <hr>
+                <p class="slider-number"></p>
+              </div>
+            </div>
+          
+            <div class="slide fade">
+              <img class="slide-image" src="aerial-view-city-by-water.jpg">
+              <div class="slide-content">
+                <h1 class="slide-title">Study in Australia</h1>
+                <p class="slide-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+                </p>
+                <a href="" class="slide-btn">
+                  Apply Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                </a>
+              </div>
+              <div class="slide-number-container">
+                <p class="slider-number"></p>
+                <hr>
+                <p class="slider-number"></p>
+              </div>
+            </div>
+          
+            <div class="slide fade">
+                <img class="slide-image" src="beautiful-manhattan-bridge-new-york-usa.jpg">
+                <div class="slide-content">
+                  <h1 class="slide-title">Study in USA</h1>
+                  <p class="slide-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+                  </p>
+                  <a href="" class="slide-btn">
+                    Apply Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                  </a>
+                </div>
+                <div class="slide-number-container">
+                  <p class="slider-number"></p>
+                  <hr>
+                  <p class="slider-number"></p>
+                </div>
+              </div>
+
+            <div class="slide fade">
+              <img class="slide-image" src="toronto-street-view.jpg">
+              <div class="slide-content">
+                <h1 class="slide-title">Study in Canada</h1>
+                <p class="slide-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+                </p>
+                <a href="" class="slide-btn">
+                  Apply Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                </a>
+              </div>
+              <div class="slide-number-container">
+                <p class="slider-number"></p>
+                <hr>
+                <p class="slider-number"></p>
+              </div>
+            </div> 
+
+            <div class="slide fade">
+                <img class="slide-image" src="aerial-drone-view-batumi-georgia-old-modern-buildings-greenery-roads-mountains.jpg">
+                <div class="slide-content">
+                  <h1 class="slide-title">Study in Russia</h1>
+                  <p class="slide-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+                  </p>
+                  <a href="" class="slide-btn">
+                    Apply Now <ion-icon name="arrow-forward-circle"></ion-icon>
+                  </a>
+                </div>
+                <div class="slide-number-container">
+                  <p class="slider-number"></p>
+                  <hr>
+                  <p class="slider-number"></p>
+                </div>
+              </div>
+          
+            <!-- Next and previous buttons -->
+            <div class="slider-nav">
+              <a class="slider-nav-btn" onclick="plusSlides(-1)">
+                <ion-icon name="caret-back-outline"></ion-icon>
+              </a>
+              <a class="slider-nav-btn" onclick="plusSlides(1)">
+                <ion-icon name="caret-forward-outline"></ion-icon>
+              </a>
+            </div>
+          
+            <!-- The dots/circles -->
+            <div class="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+          </div>
+ 
+
+         
+          <div id="benefits">
+            <h1>Why Us?</h1>
+            <div id="ben-con">
+            <div id="ben1">
+              <img src="11.png" alt="">
+              <h3>Customer Support</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolores ducimus?</p>
+            </div>
+
+            <div id="ben2">
+              <img src="33.png" alt="">
+              <h3>Recruitment Solution</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolores ducimus?</p>
+            </div>
+
+            <div id="ben3">
+              <img src="22.png" alt="">
+              <h3>Globaly Connected</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolores ducimus?</p>
+            </div>
+          </div>
+        </div>
+       
+
+        <div id="about">
+          <h1>Our First Concern Is Your Business</h1>
+          <div id="about-con">
+            <div id="about-l">
+              <div id="about-l-con">
+              <img src="people-taking-part-business-event.jpg" alt="">
+            </div>
+            </div>
+            <div id="about-r">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ratione fuga eos animi nobis ea non cupiditate officia unde iure.</p> <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum commodi libero tenetur ut, quasi quod placeat dolorem cum deserunt, laboriosam reiciendis, eaque fuga molestiae nemo voluptatum. Dolorum, dicta nam tempore iste laudantium quod nesciunt harum dignissimos vel? Corrupti, perferendis neque.</p>
+              <div id="about-list">
+                <div id="list-1">
+                  <li><i class="ri-arrow-right-circle-line"></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="ri-arrow-right-circle-line"></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="ri-arrow-right-circle-line"></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="ri-arrow-right-circle-line"></i>Lorem ipsum dolor sit amet.</li>
+                </div>
+                <div id="list2">
+                  <li><i class="ri-arrow-right-circle-line"></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="ri-arrow-right-circle-line"></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="ri-arrow-right-circle-line"></i>Lorem ipsum dolor sit amet.</li>
+                <li><i class="ri-arrow-right-circle-line"></i>Lorem ipsum dolor sit amet.</li>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="profit">
+          <h1>Advantages of Partnering with Us</h1>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptate?</h3>
+          <div id="profit-con">
+            <div id="profit-card">
+             <div id="profit-cardc">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iusto!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iusto!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iusto!</p>
+             </div>
+             <div id="profit-cardp">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit amet.</p>
+             </div>
+             <div id="profit-cardimg">
+              <img src="i-listen-you-what-kind-problem-you-have-young-people-working-call-center-new-deals-is-coming.jpg" alt="">
+             </div>
+            </div>
+
+            <div id="profit-card">
+              <div id="profit-cardc">
+               <h3>Lorem ipsum dolor sit amet.</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iusto!</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iusto!</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iusto!</p>
+              </div>
+              <div id="profit-cardp">
+               <p>Lorem ipsum dolor sit amet.</p>
+               <p>Lorem ipsum dolor sit amet.</p>
+               <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div id="profit-cardimg">
+               <img src="creative-people-working-office.jpg" alt="">
+              </div>
+             </div>
+
+             <div id="profit-card">
+              <div id="profit-cardc">
+               <h3>Lorem ipsum dolor sit amet.</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iusto!</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iusto!</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, iusto!</p>
+              </div>
+              <div id="profit-cardp">
+               <p>Lorem ipsum dolor sit amet.</p>
+               <p>Lorem ipsum dolor sit amet.</p>
+               <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div id="profit-cardimg">
+               <img src="business-man-counting-dollar-banknote-online-business-concept.jpg" alt="">
+              </div>
+             </div>
+
+
+          </div>
+        </div>
+
+        <div id="affiliation">
+          <h1>Worked with more than 750 universities worldwide</h1>
+          <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis?</h2>
+          <div id="affiliation-con">
+            <div id="affiliation-con1">
+              <div id="affiliation-circle">
+                <img src="university-of-alberta-logo.jpeg" alt="">
+              </div>
+              <div id="affiliation-circle">
+                <img src="channels4_profile.jpeg" alt="">
+              </div>
+              <div id="affiliation-circle">
+                <img src="OIP.jpeg" alt="">
+              </div>
+            </div>
+            <div id="affiliation-con2">
+              <div id="affiliation-circle">
+                <img src="OIP (2).jpeg" alt="">
+              </div>
+              <div id="affiliation-circle">
+                <img src="563_4.png" alt="">
+              </div>
+              <div id="affiliation-circle">
+                <img src="Jamiat.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="tectnologysec">
+          <h1>Technological Capabilities</h1>
+          <div id="tech-con">
+          <div id="tech-left">
+            <h3>coursefinder.ai</h3>
+            <h4>Access a tech-driven platform customized for your operations. Search eligible courses, view scholarships, compare commissions, submit applications, avail discounts & waivers, get real time support, earn extra commissions, and do a lot more, at no cost.</h4>
+
+            <h3>Search Perfect Courses</h3>
+            <h4>Explore 1,00,000+ courses; filter, shortlist and compare universities, courses and scholarships in no time</h4>
+
+            <h3>Seamless Application Support</h3>
+            <h4>Real-time tracking of applications and live chat with our application experts</h4>
+
+            <h3>One Application</h3>
+            <h4>Apply to multiple universities/programs with ‘one application’, pay application fees, and do a lot more</h4>
+
+            <h3>The Eligibility Features</h3>
+            <h4>Smart technology that displays only eligible courses/universities for your students</h4>
+
+            <button>Enquire Now</button>
+          </div>
+          <div id="tech-right">
+            <img src="hand-holding-writing-checklist-application-form-document-clipboard-white-background-3d-illustration.jpg" alt="">
+          </div>
+        </div>
+        </div>
+
+        <div id="elan">
+          <h1></h1>
+          <div id="elan-con">
+          <div id="elan-left">
+            <img src="medium-shot-graduate-student.jpg" alt="">
+          </div>
+          <div id="elan-right">
+            <h3>coursefinder.ai</h3>
+            <h4>Access a tech-driven platform customized for your operations. Search eligible courses, view scholarships, compare commissions, submit applications, avail discounts & waivers, get real time support, earn extra commissions, and do a lot more, at no cost.</h4>
+
+            <h3>Search Perfect Courses</h3>
+            <h4>Explore 1,00,000+ courses; filter, shortlist and compare universities, courses and scholarships in no time</h4>
+
+            <h3>Seamless Application Support</h3>
+            <h4>Real-time tracking of applications and live chat with our application experts</h4>
+
+            <h3>One Application</h3>
+            <h4>Apply to multiple universities/programs with ‘one application’, pay application fees, and do a lot more</h4>
+
+            <h3>The Eligibility Features</h3>
+            <h4>Smart technology that displays only eligible courses/universities for your students</h4>
+
+            <button>Enquire Now</button>
+          </div>
+        </div>
+        </div>
+
+        <div id="steps">
+          <h1>3 easy steps to higher your revenues</h1>
+          <div id="steps-con">
+            <div id="stepcard">
+              <img src="Artboard 16.png" alt="">
+              <h5>Step 1</h5>
+              <h3>Start recruiting students globally</h3>
+              <p>Impeccable support through our Business Units</p>
+            </div>
+            <div id="stepcard">
+              <img src="Artboard 17.png" alt="">
+              <h5>Step 1</h5>
+              <h3>Start recruiting students globally</h3>
+              <p>Impeccable support through our Business Units</p>
+            </div>
+            <div id="stepcard">
+              <img src="Artboard 18.png" alt="">
+              <h5>Step 1</h5>
+              <h3>Start recruiting students globally</h3>
+              <p>Impeccable support through our Business Units</p>
+            </div>
+          </div>
+        </div>
+      
+        <div id="testi">
+          <h1>Customer Review</h1>
+          <div class="body--container">
+            <div class="text">"Sample Company is the best service I could have asked for."</div>
+            <div class="bubble--container">
+              <div class="bubble bubble--large"></div>
+              <div class="bubble bubble--one"></div>
+              <div class="bubble bubble--two"></div>
+              <div class="bubble bubble--three"></div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div id="footer">
+          <div id="footer-con">
+            <h1>Jawahar Education</h1>
+            <h2>Join 3500+ Active Global Study Abroad Recruitment Partner Now!</h2>
+            <button>Enquire Now</button>
+          </div>
+        </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+          <script src="script.js"></script>
+</body>
+</html>
